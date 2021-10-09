@@ -31,11 +31,13 @@ let b = {
 }
 
 console.dir(b)
-fs.writeFile("info.txt", JSON.stringify(b), function(err) {
-    if(err) {
-        return console.log(err);
+
+const data = JSON.stringify(b, null, 4);
+fs.writeFile('info.json', data, (err) => {
+    if (err) {
+        throw err;
     }
-    console.log("The file was saved!");
+    console.log("JSON data is saved.");
 });
 
 
