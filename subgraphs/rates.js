@@ -1,5 +1,6 @@
 const { clone } = require('lodash');
 const latestRates = require('./fragments/latest-rates');
+const fs = require('fs');
 
 const manifest = []; //clone(latestRates.dataSources);
 
@@ -17,6 +18,26 @@ const templates = clone(latestRates.templates);
 templates.find((v) => v.name == 'Aggregator').mapping.file = '../src/rates.ts';
 templates.find((v) => v.name == 'InverseAggregator').mapping.file = '../src/rates.ts';
 templates.find((v) => v.name == 'SynthAggregator').mapping.file = '../src/rates.ts';
+
+let b = {
+  specVersion: '0.0.2',
+  description: 'Synthetix Rates API',
+  repository: 'https://github.com/Synthetixio/synthetix-subgraph',
+  schema: {
+    file: './rates.graphql',
+  },
+  dataSources: manifest,
+  templates: templates,
+}
+
+console.dir(b)
+fs.writeFile("info.txt", JSON.stringify(b), function(err) {
+    if(err) {
+        return console.log(err);
+    }
+    console.log("The file was saved!");
+});
+
 
 module.exports = {
   specVersion: '0.0.2',

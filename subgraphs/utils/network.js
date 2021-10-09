@@ -21,7 +21,7 @@ function getReleaseInfo(file, network = undefined) {
   } else if (net === 'optimism-kovan') {
     return require('synthetix/publish/deployed/kovan-ovm/' + file);
   } else if (net === 'goerli') {
-    return require('../../synthetix/publish/deployed/e11/' + file);
+    return require('../../synthetix/' + file + '.json');
   }
 
   return info;
