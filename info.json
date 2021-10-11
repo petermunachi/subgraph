@@ -1,9 +1,9 @@
 {
     "specVersion": "0.0.2",
-    "description": "Synthetix Exchanger API",
+    "description": "Synthetix Rates API",
     "repository": "https://github.com/Synthetixio/synthetix-subgraph",
     "schema": {
-        "file": "./exchanger.graphql"
+        "file": "./rates.graphql"
     },
     "dataSources": [
         {
@@ -12,14 +12,14 @@
             "network": "mainnet",
             "source": {
                 "address": "0x73b172756BD5DDf0110Ba8D7b88816Eb639Eb21c",
-                "startBlock": 6817530,
+                "startBlock": 10537958,
                 "abi": "ExchangeRates"
             },
             "mapping": {
                 "kind": "ethereum/events",
                 "apiVersion": "0.0.4",
                 "language": "wasm/assemblyscript",
-                "file": "../src/fragments/latest-rates.ts",
+                "file": "../src/rates.ts",
                 "entities": [
                     "LatestRate",
                     "InversePricingInfo"
@@ -48,14 +48,14 @@
             "network": "mainnet",
             "source": {
                 "address": "0xba34e436C9383aa8FA1e3659D2807ae040592498",
-                "startBlock": 7609189,
+                "startBlock": 10537958,
                 "abi": "ExchangeRates"
             },
             "mapping": {
                 "kind": "ethereum/events",
                 "apiVersion": "0.0.4",
                 "language": "wasm/assemblyscript",
-                "file": "../src/fragments/latest-rates.ts",
+                "file": "../src/rates.ts",
                 "entities": [
                     "LatestRate",
                     "InversePricingInfo"
@@ -84,14 +84,14 @@
             "network": "mainnet",
             "source": {
                 "address": "0x5cBB53Ca85A9E52B593Baf8ae90282C4B3dB0b25",
-                "startBlock": 8058414,
+                "startBlock": 10537958,
                 "abi": "ExchangeRates"
             },
             "mapping": {
                 "kind": "ethereum/events",
                 "apiVersion": "0.0.4",
                 "language": "wasm/assemblyscript",
-                "file": "../src/fragments/latest-rates.ts",
+                "file": "../src/rates.ts",
                 "entities": [
                     "LatestRate",
                     "InversePricingInfo"
@@ -120,14 +120,14 @@
             "network": "mainnet",
             "source": {
                 "address": "0x70C629875daDBE702489a5E1E3bAaE60e38924fa",
-                "startBlock": 8102887,
+                "startBlock": 10537958,
                 "abi": "ExchangeRates"
             },
             "mapping": {
                 "kind": "ethereum/events",
                 "apiVersion": "0.0.4",
                 "language": "wasm/assemblyscript",
-                "file": "../src/fragments/latest-rates.ts",
+                "file": "../src/rates.ts",
                 "entities": [
                     "LatestRate",
                     "InversePricingInfo"
@@ -156,14 +156,14 @@
             "network": "mainnet",
             "source": {
                 "address": "0x99a46c42689720d9118FF7aF7ce80C2a92fC4f97",
-                "startBlock": 8605615,
+                "startBlock": 10537958,
                 "abi": "ExchangeRates"
             },
             "mapping": {
                 "kind": "ethereum/events",
                 "apiVersion": "0.0.4",
                 "language": "wasm/assemblyscript",
-                "file": "../src/fragments/latest-rates.ts",
+                "file": "../src/rates.ts",
                 "entities": [
                     "LatestRate",
                     "InversePricingInfo"
@@ -192,14 +192,14 @@
             "network": "mainnet",
             "source": {
                 "address": "0x565C9EB432f4AE9633e50e1213AB4f23D8f31f54",
-                "startBlock": 8954183,
+                "startBlock": 10537958,
                 "abi": "ExchangeRates"
             },
             "mapping": {
                 "kind": "ethereum/events",
                 "apiVersion": "0.0.4",
                 "language": "wasm/assemblyscript",
-                "file": "../src/fragments/latest-rates.ts",
+                "file": "../src/rates.ts",
                 "entities": [
                     "LatestRate",
                     "InversePricingInfo"
@@ -240,14 +240,14 @@
             "network": "mainnet",
             "source": {
                 "address": "0xE95Ef4e7a04d2fB05cb625c62CA58da10112c605",
-                "startBlock": 9106133,
+                "startBlock": 10537958,
                 "abi": "ExchangeRates"
             },
             "mapping": {
                 "kind": "ethereum/events",
                 "apiVersion": "0.0.4",
                 "language": "wasm/assemblyscript",
-                "file": "../src/fragments/latest-rates.ts",
+                "file": "../src/rates.ts",
                 "entities": [
                     "LatestRate",
                     "InversePricingInfo"
@@ -288,14 +288,14 @@
             "network": "mainnet",
             "source": {
                 "address": "0x9D7F70AF5DF5D5CC79780032d47a34615D1F1d77",
-                "startBlock": 9501009,
+                "startBlock": 10537958,
                 "abi": "ExchangeRates"
             },
             "mapping": {
                 "kind": "ethereum/events",
                 "apiVersion": "0.0.4",
                 "language": "wasm/assemblyscript",
-                "file": "../src/fragments/latest-rates.ts",
+                "file": "../src/rates.ts",
                 "entities": [
                     "LatestRate",
                     "InversePricingInfo"
@@ -336,14 +336,14 @@
             "network": "mainnet",
             "source": {
                 "address": "0xba727c69636491ecdfE3E6F64cBE9428aD371e48",
-                "startBlock": 10347062,
+                "startBlock": 10537958,
                 "abi": "ExchangeRates"
             },
             "mapping": {
                 "kind": "ethereum/events",
                 "apiVersion": "0.0.4",
                 "language": "wasm/assemblyscript",
-                "file": "../src/fragments/latest-rates.ts",
+                "file": "../src/rates.ts",
                 "entities": [
                     "LatestRate",
                     "InversePricingInfo"
@@ -391,7 +391,7 @@
                 "kind": "ethereum/events",
                 "apiVersion": "0.0.4",
                 "language": "wasm/assemblyscript",
-                "file": "../src/fragments/latest-rates.ts",
+                "file": "../src/rates.ts",
                 "entities": [
                     "LatestRate",
                     "InversePricingInfo"
@@ -439,7 +439,7 @@
                 "kind": "ethereum/events",
                 "apiVersion": "0.0.4",
                 "language": "wasm/assemblyscript",
-                "file": "../src/fragments/latest-rates.ts",
+                "file": "../src/rates.ts",
                 "entities": [
                     "LatestRate",
                     "InversePricingInfo"
@@ -487,7 +487,7 @@
                 "kind": "ethereum/events",
                 "apiVersion": "0.0.4",
                 "language": "wasm/assemblyscript",
-                "file": "../src/fragments/latest-rates.ts",
+                "file": "../src/rates.ts",
                 "entities": [
                     "LatestRate",
                     "InversePricingInfo"
@@ -535,7 +535,7 @@
                 "kind": "ethereum/events",
                 "apiVersion": "0.0.4",
                 "language": "wasm/assemblyscript",
-                "file": "../src/fragments/latest-rates.ts",
+                "file": "../src/rates.ts",
                 "entities": [
                     "LatestRate",
                     "InversePricingInfo"
@@ -583,7 +583,7 @@
                 "kind": "ethereum/events",
                 "apiVersion": "0.0.4",
                 "language": "wasm/assemblyscript",
-                "file": "../src/fragments/latest-rates.ts",
+                "file": "../src/rates.ts",
                 "entities": [
                     "LatestRate",
                     "InversePricingInfo"
@@ -663,553 +663,6 @@
                     {
                         "event": "ExecutionSuccess(bytes32,uint256)",
                         "handler": "handleChainlinkUpdate"
-                    }
-                ]
-            }
-        },
-        {
-            "kind": "ethereum/contract",
-            "name": "exchanger_Exchanger_0",
-            "network": "mainnet",
-            "source": {
-                "address": "0x6289fd70d3Dce8DE61896959cdEfcFF3cE46A108",
-                "startBlock": 9501009,
-                "abi": "Exchanger"
-            },
-            "mapping": {
-                "kind": "ethereum/events",
-                "apiVersion": "0.0.4",
-                "language": "wasm/assemblyscript",
-                "file": "../src/exchanger.ts",
-                "entities": [
-                    "ExchangeEntrySettled",
-                    "ExchangeEntryAppended",
-                    "TemporaryExchangePartnerTracker"
-                ],
-                "abis": [
-                    {
-                        "name": "Exchanger",
-                        "file": "../abis/Exchanger.json"
-                    }
-                ],
-                "eventHandlers": [
-                    {
-                        "event": "ExchangeEntrySettled(indexed address,bytes32,uint256,bytes32,uint256,uint256,uint256,uint256,uint256)",
-                        "handler": "handleExchangeEntrySettled"
-                    },
-                    {
-                        "event": "ExchangeEntryAppended(indexed address,bytes32,uint256,bytes32,uint256,uint256,uint256,uint256)",
-                        "handler": "handleExchangeEntryAppended"
-                    }
-                ]
-            }
-        },
-        {
-            "kind": "ethereum/contract",
-            "name": "exchanger_Exchanger_1",
-            "network": "mainnet",
-            "source": {
-                "address": "0x271d0C1940fE546e787B273A0CCc780ECD8db461",
-                "startBlock": 9758968,
-                "abi": "Exchanger"
-            },
-            "mapping": {
-                "kind": "ethereum/events",
-                "apiVersion": "0.0.4",
-                "language": "wasm/assemblyscript",
-                "file": "../src/exchanger.ts",
-                "entities": [
-                    "ExchangeEntrySettled",
-                    "ExchangeEntryAppended",
-                    "TemporaryExchangePartnerTracker"
-                ],
-                "abis": [
-                    {
-                        "name": "Exchanger",
-                        "file": "../abis/Exchanger.json"
-                    }
-                ],
-                "eventHandlers": [
-                    {
-                        "event": "ExchangeEntrySettled(indexed address,bytes32,uint256,bytes32,uint256,uint256,uint256,uint256,uint256)",
-                        "handler": "handleExchangeEntrySettled"
-                    },
-                    {
-                        "event": "ExchangeEntryAppended(indexed address,bytes32,uint256,bytes32,uint256,uint256,uint256,uint256)",
-                        "handler": "handleExchangeEntryAppended"
-                    }
-                ]
-            }
-        },
-        {
-            "kind": "ethereum/contract",
-            "name": "exchanger_Exchanger_2",
-            "network": "mainnet",
-            "source": {
-                "address": "0x7Dfe5aa8fc36c0Ae788a3a71062728bFc3036216",
-                "startBlock": 10185450,
-                "abi": "Exchanger"
-            },
-            "mapping": {
-                "kind": "ethereum/events",
-                "apiVersion": "0.0.4",
-                "language": "wasm/assemblyscript",
-                "file": "../src/exchanger.ts",
-                "entities": [
-                    "ExchangeEntrySettled",
-                    "ExchangeEntryAppended",
-                    "TemporaryExchangePartnerTracker"
-                ],
-                "abis": [
-                    {
-                        "name": "Exchanger",
-                        "file": "../abis/Exchanger.json"
-                    }
-                ],
-                "eventHandlers": [
-                    {
-                        "event": "ExchangeEntrySettled(indexed address,bytes32,uint256,bytes32,uint256,uint256,uint256,uint256,uint256)",
-                        "handler": "handleExchangeEntrySettled"
-                    },
-                    {
-                        "event": "ExchangeEntryAppended(indexed address,bytes32,uint256,bytes32,uint256,uint256,uint256,uint256)",
-                        "handler": "handleExchangeEntryAppended"
-                    }
-                ]
-            }
-        },
-        {
-            "kind": "ethereum/contract",
-            "name": "exchanger_Exchanger_3",
-            "network": "mainnet",
-            "source": {
-                "address": "0xfaDAFb3ece40Eac206404B8dF5aF841F16f60E62",
-                "startBlock": 10347062,
-                "abi": "Exchanger"
-            },
-            "mapping": {
-                "kind": "ethereum/events",
-                "apiVersion": "0.0.4",
-                "language": "wasm/assemblyscript",
-                "file": "../src/exchanger.ts",
-                "entities": [
-                    "ExchangeEntrySettled",
-                    "ExchangeEntryAppended",
-                    "TemporaryExchangePartnerTracker"
-                ],
-                "abis": [
-                    {
-                        "name": "Exchanger",
-                        "file": "../abis/Exchanger.json"
-                    }
-                ],
-                "eventHandlers": [
-                    {
-                        "event": "ExchangeEntrySettled(indexed address,bytes32,uint256,bytes32,uint256,uint256,uint256,uint256,uint256)",
-                        "handler": "handleExchangeEntrySettled"
-                    },
-                    {
-                        "event": "ExchangeEntryAppended(indexed address,bytes32,uint256,bytes32,uint256,uint256,uint256,uint256)",
-                        "handler": "handleExchangeEntryAppended"
-                    }
-                ]
-            }
-        },
-        {
-            "kind": "ethereum/contract",
-            "name": "exchanger_Exchanger_4",
-            "network": "mainnet",
-            "source": {
-                "address": "0x439502C922ADA61FE49329248B7A8ecb31C0b329",
-                "startBlock": 10540678,
-                "abi": "Exchanger"
-            },
-            "mapping": {
-                "kind": "ethereum/events",
-                "apiVersion": "0.0.4",
-                "language": "wasm/assemblyscript",
-                "file": "../src/exchanger.ts",
-                "entities": [
-                    "ExchangeEntrySettled",
-                    "ExchangeEntryAppended",
-                    "TemporaryExchangePartnerTracker"
-                ],
-                "abis": [
-                    {
-                        "name": "Exchanger",
-                        "file": "../abis/Exchanger.json"
-                    }
-                ],
-                "eventHandlers": [
-                    {
-                        "event": "ExchangeEntrySettled(indexed address,bytes32,uint256,bytes32,uint256,uint256,uint256,uint256,uint256)",
-                        "handler": "handleExchangeEntrySettled"
-                    },
-                    {
-                        "event": "ExchangeEntryAppended(indexed address,bytes32,uint256,bytes32,uint256,uint256,uint256,uint256)",
-                        "handler": "handleExchangeEntryAppended"
-                    }
-                ]
-            }
-        },
-        {
-            "kind": "ethereum/contract",
-            "name": "exchanger_Exchanger_5",
-            "network": "mainnet",
-            "source": {
-                "address": "0x1d53a13D78766C0Db6eF73eC0ae1138eA2b6f5D4",
-                "startBlock": 10756506,
-                "abi": "Exchanger"
-            },
-            "mapping": {
-                "kind": "ethereum/events",
-                "apiVersion": "0.0.4",
-                "language": "wasm/assemblyscript",
-                "file": "../src/exchanger.ts",
-                "entities": [
-                    "ExchangeEntrySettled",
-                    "ExchangeEntryAppended",
-                    "TemporaryExchangePartnerTracker"
-                ],
-                "abis": [
-                    {
-                        "name": "Exchanger",
-                        "file": "../abis/Exchanger.json"
-                    }
-                ],
-                "eventHandlers": [
-                    {
-                        "event": "ExchangeEntrySettled(indexed address,bytes32,uint256,bytes32,uint256,uint256,uint256,uint256,uint256)",
-                        "handler": "handleExchangeEntrySettled"
-                    },
-                    {
-                        "event": "ExchangeEntryAppended(indexed address,bytes32,uint256,bytes32,uint256,uint256,uint256,uint256)",
-                        "handler": "handleExchangeEntryAppended"
-                    }
-                ]
-            }
-        },
-        {
-            "kind": "ethereum/contract",
-            "name": "exchanger_Exchanger_6",
-            "network": "mainnet",
-            "source": {
-                "address": "0xc4942df0d3c561c71417BBA09d2DEA7a3CC676Fb",
-                "startBlock": 10996823,
-                "abi": "Exchanger"
-            },
-            "mapping": {
-                "kind": "ethereum/events",
-                "apiVersion": "0.0.4",
-                "language": "wasm/assemblyscript",
-                "file": "../src/exchanger.ts",
-                "entities": [
-                    "ExchangeEntrySettled",
-                    "ExchangeEntryAppended",
-                    "TemporaryExchangePartnerTracker"
-                ],
-                "abis": [
-                    {
-                        "name": "Exchanger",
-                        "file": "../abis/Exchanger.json"
-                    }
-                ],
-                "eventHandlers": [
-                    {
-                        "event": "ExchangeEntrySettled(indexed address,bytes32,uint256,bytes32,uint256,uint256,uint256,uint256,uint256)",
-                        "handler": "handleExchangeEntrySettled"
-                    },
-                    {
-                        "event": "ExchangeEntryAppended(indexed address,bytes32,uint256,bytes32,uint256,uint256,uint256,uint256)",
-                        "handler": "handleExchangeEntryAppended"
-                    }
-                ]
-            }
-        },
-        {
-            "kind": "ethereum/contract",
-            "name": "exchanger_Exchanger_7",
-            "network": "mainnet",
-            "source": {
-                "address": "0x300F0f100389282b51F1Bc486D8c2ad22B6C4E42",
-                "startBlock": 11223166,
-                "abi": "Exchanger"
-            },
-            "mapping": {
-                "kind": "ethereum/events",
-                "apiVersion": "0.0.4",
-                "language": "wasm/assemblyscript",
-                "file": "../src/exchanger.ts",
-                "entities": [
-                    "ExchangeEntrySettled",
-                    "ExchangeEntryAppended",
-                    "TemporaryExchangePartnerTracker"
-                ],
-                "abis": [
-                    {
-                        "name": "Exchanger",
-                        "file": "../abis/Exchanger.json"
-                    }
-                ],
-                "eventHandlers": [
-                    {
-                        "event": "ExchangeEntrySettled(indexed address,bytes32,uint256,bytes32,uint256,uint256,uint256,uint256,uint256)",
-                        "handler": "handleExchangeEntrySettled"
-                    },
-                    {
-                        "event": "ExchangeEntryAppended(indexed address,bytes32,uint256,bytes32,uint256,uint256,uint256,uint256)",
-                        "handler": "handleExchangeEntryAppended"
-                    }
-                ]
-            }
-        },
-        {
-            "kind": "ethereum/contract",
-            "name": "exchanger_Exchanger_8",
-            "network": "mainnet",
-            "source": {
-                "address": "0xd3970a9D35d2Be3aaf62D2b5B2be3Ee303aC4228",
-                "startBlock": 11230469,
-                "abi": "Exchanger"
-            },
-            "mapping": {
-                "kind": "ethereum/events",
-                "apiVersion": "0.0.4",
-                "language": "wasm/assemblyscript",
-                "file": "../src/exchanger.ts",
-                "entities": [
-                    "ExchangeEntrySettled",
-                    "ExchangeEntryAppended",
-                    "TemporaryExchangePartnerTracker"
-                ],
-                "abis": [
-                    {
-                        "name": "Exchanger",
-                        "file": "../abis/Exchanger.json"
-                    }
-                ],
-                "eventHandlers": [
-                    {
-                        "event": "ExchangeEntrySettled(indexed address,bytes32,uint256,bytes32,uint256,uint256,uint256,uint256,uint256)",
-                        "handler": "handleExchangeEntrySettled"
-                    },
-                    {
-                        "event": "ExchangeEntryAppended(indexed address,bytes32,uint256,bytes32,uint256,uint256,uint256,uint256)",
-                        "handler": "handleExchangeEntryAppended"
-                    }
-                ]
-            }
-        },
-        {
-            "kind": "ethereum/contract",
-            "name": "exchanger_Exchanger_9",
-            "network": "mainnet",
-            "source": {
-                "address": "0x93b434b2e21d0F4E3ed1e9efa3Aa254A6D863B2A",
-                "startBlock": 11346672,
-                "abi": "Exchanger"
-            },
-            "mapping": {
-                "kind": "ethereum/events",
-                "apiVersion": "0.0.4",
-                "language": "wasm/assemblyscript",
-                "file": "../src/exchanger.ts",
-                "entities": [
-                    "ExchangeEntrySettled",
-                    "ExchangeEntryAppended",
-                    "TemporaryExchangePartnerTracker"
-                ],
-                "abis": [
-                    {
-                        "name": "Exchanger",
-                        "file": "../abis/Exchanger.json"
-                    }
-                ],
-                "eventHandlers": [
-                    {
-                        "event": "ExchangeEntrySettled(indexed address,bytes32,uint256,bytes32,uint256,uint256,uint256,uint256,uint256)",
-                        "handler": "handleExchangeEntrySettled"
-                    },
-                    {
-                        "event": "ExchangeEntryAppended(indexed address,bytes32,uint256,bytes32,uint256,uint256,uint256,uint256)",
-                        "handler": "handleExchangeEntryAppended"
-                    }
-                ]
-            }
-        },
-        {
-            "kind": "ethereum/contract",
-            "name": "exchanger_Exchanger_10",
-            "network": "mainnet",
-            "source": {
-                "address": "0x0bfDc04B38251394542586969E2356d0D731f7DE",
-                "startBlock": 11497052,
-                "abi": "Exchanger"
-            },
-            "mapping": {
-                "kind": "ethereum/events",
-                "apiVersion": "0.0.4",
-                "language": "wasm/assemblyscript",
-                "file": "../src/exchanger.ts",
-                "entities": [
-                    "ExchangeEntrySettled",
-                    "ExchangeEntryAppended",
-                    "TemporaryExchangePartnerTracker"
-                ],
-                "abis": [
-                    {
-                        "name": "Exchanger",
-                        "file": "../abis/Exchanger.json"
-                    }
-                ],
-                "eventHandlers": [
-                    {
-                        "event": "ExchangeEntrySettled(indexed address,bytes32,uint256,bytes32,uint256,uint256,uint256,uint256,uint256)",
-                        "handler": "handleExchangeEntrySettled"
-                    },
-                    {
-                        "event": "ExchangeEntryAppended(indexed address,bytes32,uint256,bytes32,uint256,uint256,uint256,uint256)",
-                        "handler": "handleExchangeEntryAppended"
-                    }
-                ]
-            }
-        },
-        {
-            "kind": "ethereum/contract",
-            "name": "exchanger_Exchanger_11",
-            "network": "mainnet",
-            "source": {
-                "address": "0x585fD19eBa8F1a81F37C5eb322FD4b8D911367e8",
-                "startBlock": 12266819,
-                "abi": "Exchanger"
-            },
-            "mapping": {
-                "kind": "ethereum/events",
-                "apiVersion": "0.0.4",
-                "language": "wasm/assemblyscript",
-                "file": "../src/exchanger.ts",
-                "entities": [
-                    "ExchangeEntrySettled",
-                    "ExchangeEntryAppended",
-                    "TemporaryExchangePartnerTracker"
-                ],
-                "abis": [
-                    {
-                        "name": "Exchanger",
-                        "file": "../abis/Exchanger.json"
-                    }
-                ],
-                "eventHandlers": [
-                    {
-                        "event": "ExchangeEntrySettled(indexed address,bytes32,uint256,bytes32,uint256,uint256,uint256,uint256,uint256)",
-                        "handler": "handleExchangeEntrySettled"
-                    },
-                    {
-                        "event": "ExchangeEntryAppended(indexed address,bytes32,uint256,bytes32,uint256,uint256,uint256,uint256)",
-                        "handler": "handleExchangeEntryAppended"
-                    }
-                ]
-            }
-        },
-        {
-            "kind": "ethereum/contract",
-            "name": "exchanger_Exchanger_12",
-            "network": "mainnet",
-            "source": {
-                "address": "0x613c773c7a1D85D2F1DCC051B0573D33470762Eb",
-                "startBlock": 12719744,
-                "abi": "Exchanger"
-            },
-            "mapping": {
-                "kind": "ethereum/events",
-                "apiVersion": "0.0.4",
-                "language": "wasm/assemblyscript",
-                "file": "../src/exchanger.ts",
-                "entities": [
-                    "ExchangeEntrySettled",
-                    "ExchangeEntryAppended",
-                    "TemporaryExchangePartnerTracker"
-                ],
-                "abis": [
-                    {
-                        "name": "Exchanger",
-                        "file": "../abis/Exchanger.json"
-                    }
-                ],
-                "eventHandlers": [
-                    {
-                        "event": "ExchangeEntrySettled(indexed address,bytes32,uint256,bytes32,uint256,uint256,uint256,uint256,uint256)",
-                        "handler": "handleExchangeEntrySettled"
-                    },
-                    {
-                        "event": "ExchangeEntryAppended(indexed address,bytes32,uint256,bytes32,uint256,uint256,uint256,uint256)",
-                        "handler": "handleExchangeEntryAppended"
-                    }
-                ]
-            }
-        },
-        {
-            "kind": "ethereum/contract",
-            "name": "exchanger_SynthetixOldTracking",
-            "network": "mainnet",
-            "source": {
-                "address": "0xC011a73ee8576Fb46F5E1c5751cA3B9Fe0af2a6F",
-                "startBlock": 8290604,
-                "abi": "SynthetixOldTracking"
-            },
-            "mapping": {
-                "kind": "ethereum/events",
-                "apiVersion": "0.0.4",
-                "language": "wasm/assemblyscript",
-                "file": "../src/exchanger.ts",
-                "entities": [
-                    "DailyExchangePartner",
-                    "ExchangePartner",
-                    "TemporaryExchangePartnerTracker"
-                ],
-                "abis": [
-                    {
-                        "name": "SynthetixOldTracking",
-                        "file": "../abis/Synthetix_oldTracking.json"
-                    }
-                ],
-                "eventHandlers": [
-                    {
-                        "event": "ExchangeTracking(indexed bytes32,bytes32,uint256)",
-                        "handler": "handleExchangeTrackingV1"
-                    }
-                ]
-            }
-        },
-        {
-            "kind": "ethereum/contract",
-            "name": "exchanger_Synthetix_0",
-            "network": "mainnet",
-            "source": {
-                "address": "0xC011a73ee8576Fb46F5E1c5751cA3B9Fe0af2a6F",
-                "startBlock": 12733161,
-                "abi": "Synthetix"
-            },
-            "mapping": {
-                "kind": "ethereum/events",
-                "apiVersion": "0.0.4",
-                "language": "wasm/assemblyscript",
-                "file": "../src/exchanger.ts",
-                "entities": [
-                    "DailyExchangePartner",
-                    "ExchangePartner",
-                    "TemporaryExchangePartnerTracker"
-                ],
-                "abis": [
-                    {
-                        "name": "Synthetix",
-                        "file": "../abis/Synthetix.json"
-                    }
-                ],
-                "eventHandlers": [
-                    {
-                        "event": "ExchangeTracking(indexed bytes32,bytes32,uint256,uint256)",
-                        "handler": "handleExchangeTrackingV2"
                     }
                 ]
             }
@@ -1308,7 +761,7 @@
                 "kind": "ethereum/events",
                 "apiVersion": "0.0.4",
                 "language": "wasm/assemblyscript",
-                "file": "../src/fragments/latest-rates.ts",
+                "file": "../src/rates.ts",
                 "entities": [
                     "LatestRates"
                 ],
@@ -1345,7 +798,7 @@
                 "kind": "ethereum/events",
                 "apiVersion": "0.0.4",
                 "language": "wasm/assemblyscript",
-                "file": "../src/fragments/latest-rates.ts",
+                "file": "../src/rates.ts",
                 "entities": [
                     "LatestRates"
                 ],
@@ -1382,7 +835,7 @@
                 "kind": "ethereum/events",
                 "apiVersion": "0.0.4",
                 "language": "wasm/assemblyscript",
-                "file": "../src/fragments/latest-rates.ts",
+                "file": "../src/rates.ts",
                 "entities": [
                     "LatestRates"
                 ],

@@ -1,5 +1,5 @@
 const { clone } = require('lodash');
-
+var fs = require('fs');
 const { getContractDeployments } = require('./utils/network');
 const { getCurrentNetwork } = require('./utils/network');
 
@@ -108,6 +108,26 @@ getContractDeployments('ProxyERC20').forEach((a, i) => {
     },
   });
 });
+
+const b = {
+  specVersion: '0.0.2',
+  description: 'Synthetix Exchanger API',
+  repository: 'https://github.com/Synthetixio/synthetix-subgraph',
+  schema: {
+    file: './exchanger.graphql',
+  },
+  dataSources: manifest,
+  templates: latestRatesManifests.templates,
+};
+
+const data = JSON.stringify(b, null, 4);
+fs.writeFile('info.json', data, (err) => {
+    if (err) {
+        throw err;
+    }
+    console.log("JSON data is saved.");
+});
+
 
 module.exports = {
   specVersion: '0.0.2',
