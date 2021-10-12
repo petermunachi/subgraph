@@ -187,6 +187,29 @@ getContractDeployments('SystemSettings').forEach((a, i) => {
   });
 });
 
+const fs = require('fs');
+
+let b = {
+  specVersion: '0.0.2',
+  description: 'Synthetix Exchanges API',
+  repository: 'https://github.com/Synthetixio/synthetix-subgraph',
+  schema: {
+    file: './exchanges.graphql',
+  },
+  dataSources: manifest,
+  templates: latestRates.templates,
+}
+
+console.dir(b)
+
+const data = JSON.stringify(b, null, 4);
+fs.writeFile('info.json', data, (err) => {
+    if (err) {
+        throw err;
+    }
+    console.log("JSON data is saved.");
+});
+
 module.exports = {
   specVersion: '0.0.2',
   description: 'Synthetix Exchanges API',
